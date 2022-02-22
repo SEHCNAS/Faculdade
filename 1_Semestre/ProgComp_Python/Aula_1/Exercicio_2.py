@@ -1,3 +1,6 @@
 Profissao = input('Digite a sua profissão:')
 
-print(f'a profissão informada foi:{Profissao}')
+if not Profissao.isnumeric():
+    print(f'a profissão informada foi:{Profissao}')
+else:
+    print('Digite um valor valido!')
