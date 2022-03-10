@@ -1,6 +1,7 @@
 # Necessario instalar o requests
 # tbm precisei rodar esse comando - include python to windows PATH variable,
 # then run python -m ensurepip
+# doc api - https://docs.awesomeapi.com.br/api-de-moedas
 from pip._vendor import requests
 import json
 
