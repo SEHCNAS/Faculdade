@@ -6,6 +6,10 @@ from pip._vendor import requests
 import json
 
 
+def __init__():
+    pass
+
+
 def Buscar_Dados():
     # Url com o parametro da moeda fixo
     request = requests.api.get(
