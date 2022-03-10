@@ -21,4 +21,5 @@ def Buscar_Dados():
 
 # Retorna so somente um item do json - Buscar_Dados()['USDBRL']['bid']
 # Retorna o json inteiro - Buscar_Dados()
+print(Buscar_Dados()['USDBRL'])
 print(Buscar_Dados()['USDBRL']['bid'])
