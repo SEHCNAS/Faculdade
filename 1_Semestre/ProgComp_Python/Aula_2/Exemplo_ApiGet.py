@@ -1,11 +1,18 @@
-import requests
-# import json
+# Necessario instalar o requests
+# tbm precisei rodar esse comando - include python to windows PATH variable,
+# then run python -m ensurepip
+from pip._vendor import requests
+import json
 
 
 def Buscar_Dados():
-    request = requests.get('https://economia.awesomeapi.com.br/last/USD-BRL')
-    print(request.content)
+    # Url com o parametro da moeda fixo
+    request = requests.api.get(
+        'https://economia.awesomeapi.com.br/last/USD-BRL')
+    # pega o retorno e joga em um json
+    resp = json.loads(request.content)
+    # Retorna so somente um item do json - resp['USDBRL']['bid']
+    # Retorna o json inteiro - resp['USDBRL']['bid']
+    return resp['USDBRL']['bid']
 
-
-if __name__ == '__main__':
-    Buscar_Dados()
+print(Buscar_Dados())
