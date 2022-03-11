@@ -1,4 +1,5 @@
 # somar 5% ao salario informado
+print('-- Soma 5% ao salario informado --')
 try:
     Salario = float(input('Digite o salario: '))
 

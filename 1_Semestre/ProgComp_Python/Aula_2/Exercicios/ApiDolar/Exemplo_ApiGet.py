@@ -21,5 +21,6 @@ def Buscar_Dados():
 
 # Retorna so somente um item do json - Buscar_Dados()['USDBRL']['bid']
 # Retorna o json inteiro - Buscar_Dados()
-print(Buscar_Dados()['USDBRL'])
-print(Buscar_Dados()['USDBRL']['bid'])
+print('O valor atual do dolar é %.2f' %
+      (float(Buscar_Dados()['USDBRL']['bid'])))
+# print(Buscar_Dados()['USDBRL'])

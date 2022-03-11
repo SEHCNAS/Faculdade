@@ -1,4 +1,5 @@
 # Calculo velocidade media
+print('-- Calculo da velocidade media --')
 try:
     Distancia = float(
         input('Qual a distancia entre as cidades: ').replace(

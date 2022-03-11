@@ -1,5 +1,6 @@
 import math
 # Calculo equação de 2º grau
+print('-- Calculo equação de 2º grau --')
 try:
     A = float(input('Digite o valor de A: '))
     B = float(input('Digite o valor de B: '))
