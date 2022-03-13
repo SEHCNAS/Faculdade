@@ -1,4 +1,5 @@
 # Realiza a conversão de dolares
+print('-- Conversão de dolares para real --')
 try:
     CotacaoDolar = float(input('Digite a atual cotação do dolar: '))
     Dolares = float(input('Digite a quantidade de dolares: '))
