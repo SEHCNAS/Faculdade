@@ -23,3 +23,5 @@ else:
         A1 = (-B + raiz) / (2*A)
         A2 = (-B - raiz) / (2*A)
         print('O resultado A1 = %.4F e A2 = %.4F' % (A1, A2))
+        # print(f'O resultado A1 = {A1:.2F} e A2 = {A2:.2F}')
+
