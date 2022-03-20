@@ -1,5 +1,4 @@
 # Conversão de dias ano e meses em somente dias
-import math
 print('--Programa para converter de dias ano e meses em somente dias--')
 try:
     # Pega os valores bases para realizar o calculo
@@ -22,3 +21,4 @@ else:
     TempoDias += Dias
 
     print(f'O tempo de vida em dias é {TempoDias}')
+
