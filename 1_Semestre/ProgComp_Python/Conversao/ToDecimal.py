@@ -21,10 +21,13 @@ def CalculaOctalHexa(NumSequencia, Base):
                 NumInt = int(NumSequencia[Contador])
             NumDecimal += NumInt * (math.pow(int(Base), Contador))
             Contador += 1
+
     except KeyError as error:
         print(f'A sequencia possui algum valor incorreto: {error}')
+
     except ValueError as error:
         print(f'A sequencia possui valores não aceitos para a base')
+
     else:
         print(NumDecimal)
 
