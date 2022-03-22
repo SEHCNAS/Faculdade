@@ -7,20 +7,25 @@ def CalculaOctalHexa(NumSequencia, Base):
 
     # Realiza os calculos enquanto
     # o contador for menor que o numero de caracteres digitados
+    try:
+        while Contador < len(NumSequencia):
+            if Base == '16':
+                if NumSequencia[Contador].isnumeric():
+                    NumInt = int(NumSequencia[Contador])
 
-    while Contador < len(NumSequencia):
-        if Base == '16':
-            if NumSequencia[Contador].isnumeric():
-                NumInt = int(NumSequencia[Contador])
+                else:
+                   NumInt = DicionarioHexadecimal[NumSequencia[Contador].upper()]
 
             else:
-               NumInt = DicionarioHexadecimal[NumSequencia[Contador].upper()]
-
-        else:
-            NumInt = int(NumSequencia[Contador])
-        NumDecimal += NumInt * (math.pow(int(Base), Contador))
-        Contador += 1
-    print(NumDecimal)
+                NumInt = int(NumSequencia[Contador])
+            NumDecimal += NumInt * (math.pow(int(Base), Contador))
+            Contador += 1
+    except KeyError as error:
+        print(f'A sequencia possui algum valor incorreto: {error}')
+    except ValueError as error:
+        print(f'A sequencia possui valores não aceitos para a base')
+    else:
+        print(NumDecimal)
 
 
 print('--Converter binario, octal ou hexa para decimal--')
