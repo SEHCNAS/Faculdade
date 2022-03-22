@@ -1,5 +1,6 @@
 import math
 
+
 # Função para calcular conversão das bases para decimal
 def CalculaOctalHexa(NumSequencia, Base):
     Contador = 0
@@ -15,7 +16,7 @@ def CalculaOctalHexa(NumSequencia, Base):
                     NumInt = int(NumSequencia[Contador])
 
                 else:
-                   NumInt = DicionarioHexadecimal[NumSequencia[Contador].upper()]
+                    NumInt = DicionarioHexadecimal[NumSequencia[Contador].upper()]
 
             else:
                 NumInt = int(NumSequencia[Contador])
@@ -25,7 +26,7 @@ def CalculaOctalHexa(NumSequencia, Base):
     except KeyError as error:
         print(f'A sequencia possui algum valor incorreto: {error}')
 
-    except ValueError as error:
+    except ValueError:
         print(f'A sequencia possui valores não aceitos para a base')
 
     else:
