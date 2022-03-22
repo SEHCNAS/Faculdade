@@ -5,9 +5,10 @@ def CalculaOctalHexa(NumSequencia, Base):
     Contador = 0
     NumDecimal = 0
 
-    # Realiza os calculos enquanto
-    # o contador for menor que o numero de caracteres digitados
+    # Tenta realizar a conversão e pega possiveis erros
     try:
+        # Realiza os calculos enquanto
+        # o contador for menor que o numero de caracteres digitados
         while Contador < len(NumSequencia):
             if Base == '16':
                 if NumSequencia[Contador].isnumeric():
