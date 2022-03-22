@@ -30,7 +30,7 @@ def CalculaOctalHexa(NumSequencia, Base):
         print(f'A sequencia possui valores não aceitos para a base')
 
     else:
-        print(NumDecimal)
+        print(f'{NumDecimal:.0f} (Decimal)')
 
 
 print('--Converter binario, octal ou hexa para decimal--')
