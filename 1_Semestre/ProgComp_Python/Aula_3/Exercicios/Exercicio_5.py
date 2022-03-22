@@ -10,8 +10,10 @@ except ValueError as error:
     print(F'Ocorreu o seguinte erro: {error}')
 
 else:
-    # Realiza o calculo do cosseno, seno e tangente
+
+    # converte em radiano
     Radiano = math.radians(Angulo)
+    # Realiza o calculo do cosseno, seno e tangente
     cos = math.cos(Radiano)
     sen = math.sin(Radiano)
     tan = math.tan(Radiano)
