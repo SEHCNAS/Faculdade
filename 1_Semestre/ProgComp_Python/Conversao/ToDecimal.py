@@ -1,20 +1,23 @@
 import math
 
 # Função para calcular conversão das bases para decimal
-def CalculaOctalHexa(NumBinario, Base):
+def CalculaOctalHexa(NumSequencia, Base):
     Contador = 0
     NumDecimal = 0
 
     # Realiza os calculos enquanto
     # o contador for menor que o numero de caracteres digitados
-    while Contador < len(NumBinario):
+
+    while Contador < len(NumSequencia):
         if Base == '16':
-            if NumBinario[Contador].isnumeric():
-                NumInt = int(NumBinario[Contador])
+            if NumSequencia[Contador].isnumeric():
+                NumInt = int(NumSequencia[Contador])
+
             else:
-                NumInt = DicionarioHexadecimal[NumBinario[Contador].upper()]
+               NumInt = DicionarioHexadecimal[NumSequencia[Contador].upper()]
+
         else:
-            NumInt = int(NumBinario[Contador])
+            NumInt = int(NumSequencia[Contador])
         NumDecimal += NumInt * (math.pow(int(Base), Contador))
         Contador += 1
     print(NumDecimal)
