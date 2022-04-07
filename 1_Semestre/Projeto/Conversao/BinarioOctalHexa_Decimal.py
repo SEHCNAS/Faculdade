@@ -54,11 +54,11 @@ DicionarioHexadecimal = {'A': 10, 'B': 11, 'C': 12, 'D': 13, 'E': 14, 'F': 15}
 DicionarioBases = {'2': 'Binario', '8': 'Octal', '16': 'Hexa'}
 
 # Laço de repetição para permitir que o usuario realize varias conversões em sequencia
-Continua = 's'
-while Continua in ('s', 'S', 'Sim', 'SIM'):
+IsContinuar = 's'
+while IsContinuar in ('s', 'S', 'Sim', 'SIM'):
 
     # Recebe valor e base para realizar a conversão
-    Sequencia = str(input('Digite a sequencia (Binario, octal ou hexa) : '))
+    Sequencia = str(input('Digite a sequencia (Binario, octal ou hexa): '))
     Base = str(input('Digite a base da sequencia digitada (2 - Binario, 8 - Octal ou 16 - Hexa): '))
 
     # entra no while Caso o valor não seja valido
@@ -74,9 +74,9 @@ while Continua in ('s', 'S', 'Sim', 'SIM'):
         SequenciaInvertido = ''.join(reversed(Sequencia.replace(' ', '')))
         # Chama função que realizar conversão
         SequenciaDecimal = BinarioOctalHexa_Decimal(SequenciaInvertido, Base)
-        print((f'A sequencia {Sequencia}({DicionarioBases[Base]}) convertida é {SequenciaDecimal:.0f}(Decimal)'))
+        print((f'O valor {Sequencia}({DicionarioBases[Base]}) convertido é {SequenciaDecimal:.0f}(Decimal)'))
 
     else:
-        print(f'A sequencia {Sequencia}({DicionarioBases[Base]}), possui valores invalidos para a conversão solicitada')
+        print(f'O valor {Sequencia}({DicionarioBases[Base]}), possui valores invalidos para a conversão solicitada')
 
-    Continua = input('Deseja realizar outra conversão? (S/N) ')
+    IsContinuar = input('Deseja realizar outra conversão? (S/N) ')
