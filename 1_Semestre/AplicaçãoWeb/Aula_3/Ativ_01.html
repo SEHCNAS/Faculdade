@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade aula 1 - form</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>
+            <label for="fname">1) Nome do paciente </label>
+        </td>
+        <td>
+            <input type="text" id="fname" name="fname" ><br>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="fRegisto">2) Registro do paciente </label>
+        </td>
+        <td>
+            <input type="text" id="fRegisto" name="fRegisto"><br>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="fDataInclusao">3) Data de inclusão </label>
+        </td>
+        <td>
+            <input type="Date" id="fDataInclusao" name="fDataInclusao"><br>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="fDataNascimento">4) Data de nascimento </label>
+        </td>
+        <td>
+            <input type="Date" id="fDataNascimento" name="fDataNascimento"><br>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="fEmail">5) Email </label>
+        </td>
+        <td>
+            <input type="text" id="fEmail" name="fEmail"><br>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="fSexo">6) Sexo </label>
+        </td>
+        <td>
+            <input type="Radio" id="fSexoFem" name="RadioSexo" value="Fem">
+            <label for="fSexo">Feminino</label><br>
+        </td>
+        <td>
+            <input type="Radio" id="fSexoMas" name="RadioSexo" value="Masc">
+            <label for="fSexo">Masculino</label><br>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="fRacial">7) Raça declarada </label>
+        </td>
+        <td>
+            <select name="cars" id="cars">
+                 <option value="Empty"></option>
+                <option value="Branca">Branca</option>
+                <option value="Negra">Negra</option>
+                <option value="Parda">Parda</option>
+                <option value="Amarela">Amarela</option>
+                <option value="Indigena">Indigena</option>
+                <option value="Desconhecida">Desconhecida</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="fConhecimento">8) Como ficou sabendo do estudo? </label>
+        </td>
+        <td>
+            <input type="Checkbox" id="fConhecimento" name="fConhecimento" value="Con">
+            <label for="fConhecimento">Convidado</label><br>
+            <input type="Checkbox" id="fConhecimento" name="fConhecimento" value="int">
+            <label for="fConhecimento">Internet</label><br>
+            <input type="Checkbox" id="fConhecimento" name="fConhecimento" value="Amg">
+            <label for="fConhecimento">Amigos</label><br>
+            <input type="Checkbox" id="fConhecimento" name="fConhecimento" value="Fam">
+            <label for="fConhecimento">Familiares</label><br>
+            <input type="Checkbox" id="fConhecimento" name="fConhecimento" value="Out">
+            <label for="fConhecimento">Outros</label><br>
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="submit">
+        </td>
+    </tr>
+</table>
+</body>
+</html>
