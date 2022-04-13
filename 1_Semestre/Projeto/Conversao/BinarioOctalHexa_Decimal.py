@@ -57,7 +57,7 @@ DicionarioBases = {'2': 'Binario', '8': 'Octal', '16': 'Hexa'}
 IsContinuar = 's'
 while IsContinuar.upper() in ('S', 'SIM'):
 
-    # Recebe valor e base para realizar a conversão
+    # Recebe valor e base para realizar a conversão--
     Sequencia = str(input('Digite a sequencia (Binario, octal ou hexa): '))
     Base = str(input('Digite a base da sequencia digitada (2 - Binario, 8 - Octal ou 16 - Hexa): '))
 
