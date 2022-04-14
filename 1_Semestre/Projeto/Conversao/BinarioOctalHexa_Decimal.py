@@ -7,18 +7,22 @@ def validaSequencia(NumSequencia, Base):
     IsValido = True
 
     while Contador < len(NumSequencia):
-        if Base == '2':
-            if NumSequencia[Contador] not in ('0', '1'):
-                IsValido = False
-
-        if Base == '8':
-            if ord(NumSequencia[Contador]) not in range(ord('0'), ord('8')):
-                IsValido = False
-
-        if Base == '16':
-            if not NumSequencia[Contador].isnumeric():
-                if ord(NumSequencia[Contador].lower()) not in range(ord('a'), ord('g')):
+        match Base:
+            case '2':
+                if NumSequencia[Contador] not in ('0', '1'):
                     IsValido = False
+                    break
+
+            case '8':
+                if ord(NumSequencia[Contador]) not in range(ord('0'), ord('8')):
+                    IsValido = False
+                    break
+
+            case '16':
+                if not NumSequencia[Contador].isnumeric():
+                    if ord(NumSequencia[Contador].lower()) not in range(ord('a'), ord('g')):
+                        IsValido = False
+                        break
 
         Contador += 1
     return IsValido
