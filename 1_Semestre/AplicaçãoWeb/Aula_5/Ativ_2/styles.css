@@ -1,0 +1,64 @@
+.DivPrincipal{
+    border-radius: 42px;
+    width: 30%;
+    height: 100%;
+    margin: auto;
+    box-shadow: 13px 14px 1em 0px;
+}
+.PadraoImg{
+    width: 100%;
+    margin: auto;
+    border-radius: 42px 42px 0px 0px;
+}
+.LabelTitulo{
+    font-size: 40px;
+    font-weight: bold;
+}
+.LabelDistancia{
+    position: absolute;
+    font-size: 20px;
+    padding-left: 10px;
+    color: #817f7f;
+}
+.DivMeio{
+    padding-left: 20px;
+}
+.Avaliacao{
+    display: block;
+    color: orange;
+}
+.TextoAvaliacao{
+    color: black;
+}
+.Texto{
+    color: #817f7f;
+}
+.IconeAlinhamento{
+    padding-left: 84px;
+    font-size: 29px;
+}
+.SubTitulo{
+    font-weight: bold;
+    font-size: 25px;
+}
+.DiasDisponiveis{
+    font-weight: bold;
+    font-size: 17px;
+}
+.DivBaixo{
+    text-align: center;
+}
+.Horarios{
+    margin: auto;
+}
+.Reservar{
+    color: #b7b0b0;
+    font-size: 28px;
+    margin: auto;
+}
+label{
+    font-family: cursive;
+}
+p{
+    font-family: cursive;
+}
