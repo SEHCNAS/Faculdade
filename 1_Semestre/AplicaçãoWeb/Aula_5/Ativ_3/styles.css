@@ -1,0 +1,59 @@
+body{
+    background-image: url("Img/bg.jpg") ;
+}
+div{
+}
+label{
+    margin-left: 15px;
+}
+a{
+    color: #9b5806;
+}
+.DivLogin{
+    background-color: rgba(221, 221, 221, 0.96);
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.LoginCentro{
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -70%);
+    transform: translate(-50%, -70%);
+    font-size: 50px;
+}
+.Login{
+    margin-top: 70px;
+}
+.LinkSenha{
+    position: absolute;
+    left: 45%;
+}
+.BtLogin{
+    position: absolute;
+    height: 50px;
+    width: 270px;
+    border-radius: 15px;
+    color: #000000;
+    background-color: #f68d08;
+    border-color: #9b5806;
+    margin-top: 10px;
+}
+#fname{
+    width: 220px;
+    height: 25px;
+    border-radius: 5px;
+    border-width: 0px;
+}
+#fSenha{
+    width: 220px;
+    height: 25px;
+    border-radius: 5px;
+    border-width: 0px;
+}
+
