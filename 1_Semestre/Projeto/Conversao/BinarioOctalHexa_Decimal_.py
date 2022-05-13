@@ -30,13 +30,16 @@ def validaSequencia(NumSequencia, Base):
                     break
 
             case '8':
+                if not NumSequencia[Contador].isnumeric():
+                    IsValido = False
+                    break
                 if int(NumSequencia[Contador]) not in (0, 1, 2, 3, 4, 5, 6, 7):
                     IsValido = False
                     break
 
             case '16':
                 if not NumSequencia[Contador].isnumeric():
-                    if NumSequencia[Contador].lower() not in ('a', 'b', 'c', 'd', 'e', 'f', 'g'):
+                    if NumSequencia[Contador].lower() not in ('a', 'b', 'c', 'd', 'e', 'f'):
                         IsValido = False
                         break
 
