@@ -1,3 +1,22 @@
+"""
+PROJETO INTERDISCIPLINAR
+
+
+
+Integração das disciplinas
+Conversão das bases binário, hexadecimal e octadecimal para a base decimal
+
+
+Alunos:
+RGM	Nome
+28604288    Fernanda S. Carillo
+29117321    Felipe Moreira Maciel
+28805445	Felipe Alves Ferreira
+29072123	Rodrigo da S. Campos
+29052190	Gabriel Sanches
+
+"""
+
 # Função para validar se a sequencia tem valores aceitos
 def validaSequencia(NumSequencia, Base):
     Contador = 0
