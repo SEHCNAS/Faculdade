@@ -1,4 +1,4 @@
-package ProgOrientadaObjeto;
+package ProgOrientadaObjeto.Projeto;
 
 public class HelloWorld {
     public static void main(String[] args) {
