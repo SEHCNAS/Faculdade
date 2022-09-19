@@ -1,0 +1,4 @@
+{
+    "maven.terminal.useJavaHome": true,
+    "omnisharp.sdkPath": "C:\\Program Files\\Eclipse Adoptium\\jdk-17.0.4.101-hotspot"
+}
