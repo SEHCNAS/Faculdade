@@ -1,6 +1,4 @@
-package MeuProjeto;
-
-import MeuProjeto.Cachorro;
+package MeuProjeto.ExemploClasse;
 
 public class CachorroTeste {
 

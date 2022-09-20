@@ -1,4 +1,4 @@
-package MeuProjeto;
+package MeuProjeto.ExemploClasseSemRetorno_Void;
 
 public class Conta {
     String cliente;

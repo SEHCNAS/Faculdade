@@ -1,4 +1,4 @@
-package MeuProjeto;
+package MeuProjeto.ExemploClasse;
 
 import java.security.PublicKey;
 
