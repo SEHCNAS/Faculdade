@@ -14,9 +14,9 @@ Inicio
 
 	Delta = (B^2) - (4*A*C);
 	
-	PResultado = (-B - Raiz(Delta)) / (2*A);
+	PResultado = ((B * -1) - Raiz(Delta)) / (2*A);
 	
-	SResultado = (-B + Raiz(Delta)) / (2*A);
+	SResultado = ((B * -1) + Raiz(Delta)) / (2*A);
 	
 	Escreva("O 1º resultado é: " + PResultado);
 	Escreva("O 2º resultado é: " + PResultado);

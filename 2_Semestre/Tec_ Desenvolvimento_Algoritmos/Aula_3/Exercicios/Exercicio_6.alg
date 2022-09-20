@@ -9,7 +9,7 @@ Inicio
 	Escreva("Digite a altura do triangulo: ");
 	Leia(TrianguloAltura);
 	
-	TrianguloFaltante = raiz((TrianguloBase^2) + (TrianguloAltura^2));
+	TrianguloFaltante = raizQuad((TrianguloBase^2) + (TrianguloAltura^2));
 
 	Escreva("Sera necessario comprar " + TrianguloFaltante + " metros de cerca");
 Fim
