@@ -32,7 +32,7 @@
 	
 	select JH.EMPLOYEE_ID, JH.START_DATE, JH.END_DATE, JH.JOB_ID, JH.DEPARTMENT_ID from hr.job_HISTORY JH;
 
-/** LEFT JOIN **/
-	SELECT jh.EMPLOYEE_ID, jh.start_DATE, e.first_name  FROM hr.job_HISTORY jh
+/** LEFT JOIN  e Alias**/
+	SELECT jh.EMPLOYEE_ID as "id do funcionario", jh.start_DATE "DATA DE INCIO", e.first_name AS "Primeiro nome"  FROM hr.job_HISTORY jh
 	left JOIN hr.employees e
     ON jh.EMPLOYEE_ID = e.EMPLOYEE_ID;
