@@ -1,0 +1,10 @@
+.Banner{
+    background-color: purple;
+    text-align: start;
+}
+
+
+.Banner img{
+    width: 98.7vw;
+    height: 30vw;
+}
